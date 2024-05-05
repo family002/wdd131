@@ -1,0 +1,32 @@
+@media screen and (min-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        margin-right: 20px;
+    }
+
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    main figure {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        text-align: center;
+    }
+
+    main figure figcaption {
+        display: block;
+        margin-top: 10px;
+    }
+}
