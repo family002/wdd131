@@ -5,8 +5,8 @@ body{
 }
 
 header, footer{
-    background-color: rgb(255, 232, 99);
-    color: white;
+    background-color: rgb(255, 221, 31);
+    color: rgb(0, 0, 0);
     padding: 20px;
 }
 
@@ -24,12 +24,13 @@ nav ul li{
     margin-bottom: 10px;
 }
 
-nav a :hover{
-    text-decoration: underline;
-}
-
 nav a{
     text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+nav a:hover{
+    text-decoration: underline;
     color: white;
 }
 
