@@ -6,6 +6,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: "Lato", sans-serif;
 }
 
 nav{
@@ -16,6 +17,12 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    font-family: "Lato", sans-serif;
+}
+
+nav a:hover {
+    color: #000000;
+    font-family: "Lato", sans-serif;
 }
 
 .about-img {
@@ -45,6 +52,7 @@ main{
 
     gap: 10px;
     margin: 10px;
+    font-family: "Lato", sans-serif;
 }
 
 .boxh{
@@ -80,6 +88,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: "Lato", sans-serif;
 }
 
 #box1 div {
