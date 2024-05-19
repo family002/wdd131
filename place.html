@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="W03 Assignment: Switzerland Page">
+    <meta name="author" content="Adam Arriola">
+    <title>Switzerland</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Switzerland</h1>
+    </header>
+    <main>
+        <div class="hero-container">
+            <picture>
+                <source srcset="images/landscape.webp" media="(min-width: 1000px)">
+                <img src="images/landscape.webp" alt="hero image">
+            </picture>
+        </div>
+        <section class="data">
+            <h2>Data</h2>
+            <div class="data-row">
+                <div class="left-col">Area:</div>
+                <div class="right-col">41,290 sq km</div>
+            </div>
+            <div class="data-row">
+                <div class="left-col">Population:</div>
+                <div class="right-col">8.65 million</div>
+            </div>
+            <div class="data-row">
+                <div class="left-col">Capital:</div>
+                <div class="right-col">Bern</div>
+            </div>
+            <div class="data-row">
+                <div class="left-col">Languages:</div>
+                <div class="right-col">German, French</div>
+            </div>
+            <div class="data-row">
+                <div class="left-col">Currency:</div>
+                <div class="right-col">Swiss Franc</div>
+            </div>
+            <div class="data-row">
+                <div class="left-col">Time Zone:</div>
+                <div class="right-col">UTC+1</div>
+            </div>
+            <div class="data-row">
+                <div class="left-col">Calling Code:</div>
+                <div class="right-col">+41</div>
+            </div>
+            <div class="data-row">
+                <div class="left-col">Internet TLD:</div>
+                <div class="right-col">.ch</div>
+            </div>
+        </section>
+        <div class="weather">
+            <h2>Weather</h2>
+            <div id="weather-img">
+                <img src="images/weather_icon.svg" alt="weather icon" width="150">
+            </div>
+            <div class="weather-data"></div>
+            <div class="data-row">
+                <div class="left-col">Temperature:</div>
+                <div class="right-col">
+                    <div class="temp">23°C</div>
+                </div>
+            </div>
+            <div class="data-row">
+                <div class="left-col">Conditions:</div>
+                <div class="right-col">Partly Cloudy</div>
+            </div>
+            <div class="data-row">
+                <div class="left-col">Wind:</div>
+                <div class="right-col">
+                    <div class="wind">5km/h</div>
+                </div>
+            </div>
+            <div class="data-row">
+                <div class="left-col">Wind Chill:</div>
+                <div class="right-col">
+                    <div class="windChill"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="copyright"></span> Adam Arriola Las Vegas</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
