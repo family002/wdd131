@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Adam Arriola" />
+    <meta name="description" content=""/>
+    <title>Product Review Form - Adam Arriola</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <form action="review.html" method="get">
+        <fieldset>
+            <legend>Product Review Form</legend>
+            
+            <label for="product-name">Product Name:</label>
+            <select id="product-name" name="product-name" required>
+                <option value="" disabled selected>Select a Product ...</option>
+            </select>
+            
+            <fieldset>
+                <legend>Overall Rating:</legend>
+                <label><input type="radio" name="rating" value="one" required>⭐️</label>
+                <label><input type="radio" name="rating" value="two">⭐️⭐️</label>
+                <label><input type="radio" name="rating" value="three">⭐️⭐️⭐️</label>
+                <label><input type="radio" name="rating" value="four">⭐️⭐️⭐️⭐️</label>
+                <label><input type="radio" name="rating" value="five">⭐️⭐️⭐️⭐️⭐️</label>
+            </fieldset>
+            
+            <label for="installation-date">Date of Installation:</label>
+            <input type="date" id="installation-date" name="installation-date" required>
+            
+            <fieldset>
+                <legend>Which features did you find useful in the product? (Check all that apply)</legend>
+                <input type="checkbox" id="feature1" name="features" value="Feature 1">
+                <label for="feature1">Durability</label>
+                <input type="checkbox" id="feature2" name="features" value="Feature 2">
+                <label for="feature2">Ease of use</label>
+                <input type="checkbox" id="feature3" name="features" value="Feature 3">
+                <label for="feature3">Performance</label>
+                <input type="checkbox" id="feature4" name="features" value="Feature 4">
+                <label for="feature4">Design</label>
+            </fieldset>
+            
+            <label for="review">Written Review:</label>
+            <textarea id="review" name="review"></textarea>
+            
+            <label for="user-name">Your name:</label>
+            <input type="text" id="user-name" name="user-name">
+            
+            <input type="submit" value="Post Review">
+        </fieldset>
+    </form>
+
+    <footer>
+        <p>&copy; <span id="copyright"></span> Adam Arriola | Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

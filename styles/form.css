@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0E7C7B;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    max-width: 90%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #17BEBB;
+}
+
+fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    border: none;
+    margin-bottom: 15px;
+}
+
+
+
+
+fieldset legend, fieldset label {
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+input[type="radio"] + label, input[type="checkbox"] + label {
+    flex: 1 1 auto;
+}
+
+textarea, select, input[type="text"], input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    color: white;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    font-size: 2em;
+    color: #333;
+    cursor: pointer;
+}
+
+.rating input:checked ~ label {
+    color: #f5b301;
+}
+
+.rating label:hover,
+.rating label:hover ~ label {
+    color: #f5b301;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #0056b3;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+footer{
+	text-align: center;
+    padding: 20px 0;
+    background-color: white;
+    color: #333;
+    font-family: Arial, sans-serif;
+  }
+
+  footer p {
+    margin: 5px 0;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+footer p:hover {
+    color: #1319d2;
+}
+
+footer p span {
+    font-weight: bold;
+    color: #ff6f61;
+    font-family: Arial, sans-serif;
+}
